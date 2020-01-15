@@ -58,7 +58,40 @@
         <tfoot>
         </tfoot>
     </table>
-    <script src="js/index.js"></script>
+    <script src="js/app/models/Negociacao.js"></script>
+    <script>
+        var n1 = new Negociacao();
+        console.log(n1);
+
+        var n2 = new Negociacao();
+        console.log(n2)
+
+        /*
+        Nosso objetivo será criar duas instância de negociação, ou seja, 
+        dois objetos criados a partir da classe Negociacao. Usaremos as variáveis n1 e n2.
+        no console, aparecerá as duas negociações
+        ex: date: Wed Jan 15 2020 10:18:53 GMT-0300 (Horário Padrão de Brasília) {}
+        quantidade: 1
+        valor: 0
+        */
+
+        /*
+        Pq NEW?
+        Pq toda class com constructor, só será chamada se tiver o operador new.
+        é operado New que vai tornar o this. correspondente ao obj que eu criei.
+        */
+
+        var n3 = new Negociacao();
+        n3.quantidade = 10 
+        console.log(n3);
+
+        /*
+        date: Wed Jan 15 2020 10:24:17 GMT-0300 (Horário Padrão de Brasília) {}
+        quantidade: 10
+        valor: 0
+        */
+    
+    </script>
     
 </body>
 </html>
