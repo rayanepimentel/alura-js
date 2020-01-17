@@ -60,24 +60,19 @@
     </table>
     <script src="js/app/models/Negociacao.js"></script>
     <script>
-        
-        // existe outra forma de passar os dados para uma instância de negociação
-        //queremos que seja definida a quantidade, valor e data
-        //que sejam passados imediatamente p constructor()
-        // passar os parametros para constructor
-        // e colocar nas propriedades do meu objeto
+        // calcular o volume
 
         var n1 = new Negociacao(new Date(), 5, 700);
-        console.log(n1);
+        n1.valor = (2);
+        console.log(n1.valor);
+        // 10
+        //não poderia mudar
+        //precisamos criar atributo privados.
 
-        /*
-        date: Wed Jan 15 2020 10:40:49 GMT-0300 (Horário Padrão de Brasília) {}
-        quantidade: 5
-        valor: 700
-        */
+
 
     
     </script>
-    
+    1
 </body>
 </html>
