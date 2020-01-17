@@ -60,14 +60,26 @@
     </table>
     <script src="js/app/models/Negociacao.js"></script>
     <script>
-        // calcular o volume
-
+        //Quando eu uso este get antes do método, eu acesso esse método como se fosse uma propriedade.
+        //ex: não preciso chama-lo assim: n1.valor() como método
+        //pois eu consigo acessar como se fosse uma propriedade. 
+        //por de baixo do "panos" ele na verdade está executando um método.
         var n1 = new Negociacao(new Date(), 5, 700);
-        n1.valor = (2);
+        n1.valor = 2;
+        n1._quantidade = 10;
+        console.log(n1.data);
         console.log(n1.valor);
-        // 10
-        //não poderia mudar
-        //precisamos criar atributo privados.
+        console.log(n1.quantidade);
+        console.log(n1.volume);
+       
+        //Fri Jan 17 2020 10:02:23 GMT-0300 (Horário Padrão de Brasília) 700, 5, 3500
+        //mesmo o valor com 2, n1.valor = 2 não passará para _valor. Permanecendo 700 
+        //mas se eu colocar por exemplo, quantidade com _ ele muda?
+        //n1._quantidade = 10;
+        //Fri Jan 17 2020 10:02:23 GMT-0300 (Horário Padrão de Brasília) 700, 10, 7000
+        //Será que existe uma forma de garantirmos que uma negociação, depois de criada, não será alterada?
+
+   
 
 
 
